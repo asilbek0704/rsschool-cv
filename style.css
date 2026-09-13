@@ -5,6 +5,7 @@
     --color-heading: #101010;
     --color-muted: #595959;
     --color-line: #dcdcdc;
+    --color-link: #1a56b0;
     --max-width: 920px;
 }
 
@@ -175,14 +176,22 @@ main section:last-child {
     border-top: 1px solid var(--color-line);
 }
 
-#experience ul {
+#experience ul,
+#projects ul {
     margin-top: 10px;
     padding-left: 20px;
     list-style: disc;
 }
 
-#experience li {
+#experience li,
+#projects li {
     margin-bottom: 6px;
+}
+
+#projects a {
+    color: var(--color-link);
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .education-list li + li {

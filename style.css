@@ -1,0 +1,257 @@
+:root {
+    --color-bg: #e9ebef;
+    --color-page: #ffffff;
+    --color-text: #262626;
+    --color-heading: #101010;
+    --color-muted: #595959;
+    --color-line: #dcdcdc;
+    --color-link: #1a56b0;
+    --max-width: 920px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, "Segoe UI", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-heading);
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.15rem;
+    border-bottom: 1px solid var(--color-line);
+    padding-bottom: 6px;
+    margin: 0 0 14px;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cv {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background-color: var(--color-page);
+    padding: 52px 64px 64px;
+    box-shadow: 0 1px 4px rgba(16, 16, 16, 0.12);
+}
+
+.identity {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.identity-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: auto;
+}
+
+.identity-text h1 {
+    font-size: 1.9rem;
+    margin: 0 0 2px;
+}
+
+.role {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.tagline {
+    margin: 2px 0 0;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+.contacts {
+    text-align: right;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.site-nav {
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-line);
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 0.85rem;
+}
+
+.site-nav a {
+    color: var(--color-muted);
+}
+
+main {
+    margin-top: 28px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+main section:last-child {
+    margin-bottom: 0;
+}
+
+.skills-list li {
+    padding: 2px 0;
+}
+
+.entry-header,
+.entry-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.entry-date,
+.entry-location {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.entry-role {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+#experience article + article {
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px solid var(--color-line);
+}
+
+#experience ul,
+#projects ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+#experience li,
+#projects li {
+    margin-bottom: 6px;
+}
+
+#projects a {
+    color: var(--color-link);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.education-list li + li {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid var(--color-line);
+}
+
+.certifications-title {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.certifications-list li {
+    padding: 2px 0;
+    color: var(--color-text);
+}
+
+.cv-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-line);
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+.course-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-muted);
+}
+
+.rs-logo {
+    height: 22px;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .cv {
+        padding: 28px 20px 32px;
+    }
+
+    .identity {
+        flex-direction: column;
+    }
+
+    .contacts {
+        text-align: left;
+    }
+
+    .entry-header,
+    .entry-subheader {
+        flex-direction: column;
+        gap: 2px;
+    }
+}

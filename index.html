@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Asilbek Nizamov</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cv">
+        <header class="cv-header">
+            <div class="identity">
+                <img src="images/photo.jpg" alt="Asilbek Nizamov" class="avatar">
+                <div class="identity-text">
+                    <h1>Asilbek Nizamov</h1>
+                    <p class="role">Frontend Developer</p>
+                    <p class="tagline">2+ years of experience &middot; React / TypeScript &middot; English B2-C1 (IELTS 7.0)</p>
+                </div>
+                <ul class="contacts">
+                    <li><a href="mailto:nizamovasilbek@gmail.com">nizamovasilbek@gmail.com</a></li>
+                    <li><a href="https://linkedin.com/in/asilbek-nizamov">linkedin.com/in/asilbek-nizamov</a></li>
+                    <li><a href="https://t.me/asilbek2304">Telegram: @asilbek2304</a></li>
+                    <li>Discord: Asilbek (numbersigns)</li>
+                </ul>
+            </div>
+
+            <nav class="site-nav" aria-label="Section navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#english">English</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    Frontend Developer with 2+ years of experience building React and TypeScript
+                    applications for a B2B SaaS product used by retail businesses. I enjoy turning
+                    repetitive support and back-office processes into self-service interfaces, and I
+                    care about shipping features that measurably reduce manual work for real users.
+                    Currently deepening my expertise in performant data-heavy UIs (tables, dashboards,
+                    real-time updates) while continuing to study Computer Science and pick up new tools
+                    as projects require them.
+                </p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Core:</strong> React, TypeScript, JavaScript (ES6+)</li>
+                    <li><strong>State &amp; Data:</strong> TanStack Query, Redux Toolkit, Zustand</li>
+                    <li><strong>Forms &amp; Validation:</strong> React Hook Form, Zod</li>
+                    <li><strong>UI &amp; Tables:</strong> Material UI, CSS-in-JS, SCSS, react-select, AgGrid, TanStack Table, TanStack Virtual</li>
+                    <li><strong>Testing:</strong> Jest, Vitest, React Testing Library</li>
+                    <li><strong>Ecosystem:</strong> Next.js, React Router, axios, nuqs, i18next, WebSocket</li>
+                    <li><strong>Tools:</strong> Git, Agile/Scrum, Jira, Slack</li>
+                </ul>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <article>
+                    <div class="entry-header">
+                        <h3>BILLZ</h3>
+                        <span class="entry-date">August 2024 - Present</span>
+                    </div>
+                    <div class="entry-subheader">
+                        <span class="entry-role">Frontend Developer &middot; B2B SaaS, retail automation</span>
+                        <span class="entry-location">Tashkent, Uzbekistan</span>
+                    </div>
+                    <ul>
+                        <li>
+                            Built a self-service Rahmat payment flow (HTTP + WebSocket for real-time
+                            status, QR generation, TanStack Query for edge cases). Cut call-center
+                            requests for this process to zero and migrated &ge;70% of sole-proprietor
+                            / individual merchants to the new system.
+                        </li>
+                        <li>
+                            Implemented multi-barcode support in the catalog (Zustand, React Hook Form,
+                            Zod validation), eliminating duplicate product cards and stock-count
+                            discrepancies for grocery retailers.
+                        </li>
+                        <li>
+                            Moved three recurring L3-support processes to self-service interfaces
+                            (sales-target setup, Telegram bot connection, subdomain change) using AgGrid
+                            and dynamic forms, fully removing the routine load from support and
+                            engineering.
+                        </li>
+                        <li>
+                            Built the feature-rich &quot;Promo Effectiveness&quot; report (AgGrid with
+                            server-side pagination, complex multi-filtering), replacing manual marketing
+                            Excel analysis with an interactive dashboard (11 KPIs, 20+ comparison
+                            metrics, period presets).
+                        </li>
+                        <li>
+                            Launched the &quot;BILLZ vs 1C&quot; comparison landing for paid acquisition
+                            (Next.js, SEO, ru/uz i18n), building a conversion funnel for cold traffic:
+                            comparison tables, testimonials, and a dynamic lead-gen form with
+                            per-country validation.
+                        </li>
+                        <li>
+                            Built the BILLZ Academy portal (Next.js, SEO, responsive) to support the
+                            weekly customer-education program, with a flow to browse the webinar
+                            schedule and register in a couple of clicks.
+                        </li>
+                        <li>
+                            Took part in night releases and weekly on-call duty, drove large-scale
+                            legacy refactoring, and set up safe rollouts via feature flags (Unleash).
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/asilbek0704/rsschool-cv">RS School CV</a> -
+                        this responsive CV page built with semantic HTML5 and hand-written CSS3 as part
+                        of the RS School course.
+                    </li>
+                    <li>
+                        <a href="https://asilbeks-donuts.vercel.app/">Donuts Shop</a> -
+                        an adaptive web app for browsing and ordering donuts, built with React
+                        and Redux Toolkit.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul class="education-list">
+                    <li>
+                        <div class="entry-header">
+                            <h3>INHA University in Tashkent (IUT)</h3>
+                            <span class="entry-date">September 2022 - June 2026</span>
+                        </div>
+                        <div class="entry-subheader">
+                            <span class="entry-role">B.Sc., Computer Science and Information Engineering (SOCIE)</span>
+                            <span class="entry-location">Tashkent, Uzbekistan</span>
+                        </div>
+                        <p>
+                            Full academic scholarship (4 years). Student exchange - INHA
+                            University, Incheon, South Korea (1 semester, 2023).
+                        </p>
+                    </li>
+                    <li>
+                        <div class="entry-header">
+                            <h3>Academic Lyceum at Tashkent State Technical University</h3>
+                            <span class="entry-date">2020 - 2022</span>
+                        </div>
+                        <div class="entry-subheader">
+                            <span class="entry-role">Sciences &amp; Mathematics track</span>
+                            <span class="entry-location">Tashkent, Uzbekistan</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="certifications-title">Certifications</h3>
+                <ul class="certifications-list">
+                    <li><strong>Udemy:</strong> JavaScript (complete course) &middot; TypeScript (complete course) &middot; React Testing Library &amp; Jest</li>
+                    <li><strong>Other:</strong> Web Development, 9 months - PROWEB (2020-2021) &middot; IELTS Academic 7.0 (2022)</li>
+                </ul>
+            </section>
+
+            <section id="english">
+                <h2>English</h2>
+                <p>
+                    B2-C1, IELTS Academic 7.0 (2022). I use English daily to read documentation, work
+                    with international tools, and communicate in a professional remote-work setting.
+                </p>
+            </section>
+        </main>
+
+        <footer class="cv-footer">
+            <a href="https://github.com/asilbek0704">github.com/asilbek0704</a>
+            <a href="https://rs.school/courses/short-track" class="course-link">
+                <img src="images/rs-school-logo.svg" alt="RS School logo" class="rs-logo">
+                <span>RS School</span>
+            </a>
+            <p>&copy; 2026 Asilbek Nizamov</p>
+        </footer>
+    </div>
+</body>
+</html>
